@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Market</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+</head>
+<body>
+
+    <!--  Início do header  -->
+
+    <header>
+
+        <a href="#" class="logo"><i class="fas fa-shopping-cart">&nbsp;&nbsp;</i>Smart Market</a>
+
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a class="active" href="register.html">Registro</a>
+            <a href="is_fave.html">Favoritos</a>
+            <a href="is_cart.html">Carrinho</a>
+            <a href="products">List</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" class="fas fa-shopping-cart"></a>
+        </div>
+
+    </header>
+
+    <!-- Fim do header -->
+
+            <!-- Início da seção registro  -->
+
+            <section class="register" id="register">
+
+                <h1 class="heading"> Registre um item </h1>
+
+                <form action="">
+
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Título</span>
+                            <input type="text" placeholder="Título do produto">
+                        </div>
+
+                        <div class="input">
+                            <span>Preço</span>
+                            <input type="number" placeholder="Preço do produto">
+                        </div>
+                    </div>
+
+                    <div class="inputBox">
+                        <div class="input">
+                            <span>Descrição</span>
+                            <textarea name="" placeholder="Descreva brevemente o produto" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+                        <div class="file-upload">
+                          <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Adicione uma imagem</button>
+
+                          <div class="image-upload-wrap">
+                            <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                            <div class="drag-text">
+                              <h3>Arraste aqui ou selecione uma imagem</h3>
+                          </div>
+                      </div>
+                      <div class="file-upload-content">
+                        <img class="file-upload-image" src="#" alt="your image" />
+                        <div class="image-title-wrap">
+
+                          <button type="button" onclick="removeUpload()" class="remove-image">Remover <span class="image-title">Imagem selecionada</span></button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <input type="submit" value="Registrar" class="btn">
+      </form>
+  </section>
+
+  <!-- Fim da seção registro -->
+
+  <!-- Início do footer -->
+
+  <section class="footer">
+
+    <div class="credit"> Ambiente de Desenvolvimento de Software | Avaliação #3 </div>
+</section>
+
+<!-- Fim do footer -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Custom JS  -->
+<script src="js/script.js"></script>
+
+<!-- Função dark mode -->
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  function addDarkmodeWidget() {
+    new Darkmode().showWidget();
+}
+window.addEventListener('load', addDarkmodeWidget);
+</script>
+
+</body>
+</html>

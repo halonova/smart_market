@@ -21,8 +21,8 @@ module.exports = {
         type: Sequelize.BOOLEAN,
         defaultValue: false,
       },
-      quantity: {
-        type: Sequelize.INTEGER,
+      isCart: {
+        type: Sequelize.BOOLEAN,
         allowNull: false,
       },
       createdAt: {

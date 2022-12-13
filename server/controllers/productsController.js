@@ -14,8 +14,8 @@ router.get('/:id', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  const { name, price, isWishlist, quantity } = req.body;
-  const newProduct = Product.create({ name, price, isWishlist, quantity });
+  const { name, price, isWishlist, isCart } = req.body;
+  const newProduct = Product.create({ name, price, isWishlist, isCart });
 
   res.status(200).json({ message: 'cadastrado com sucesso' });
 });
@@ -31,10 +31,10 @@ router.delete('/:id', async (req, res) => {
 });
 
 router.put('/:id', async (req, res) => {
-  const { name, price, isWishlist, quantity } = req.body;
+  const { name, price, isWishlist, isCart } = req.body;
 
   await Product.update(
-    { name, price, isWishlist, quantity },
+    { name, price, isWishlist, isCart },
     {
       where: { id: req.params.id },
     }

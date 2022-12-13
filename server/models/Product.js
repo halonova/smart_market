@@ -4,7 +4,7 @@ const Product = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     price: DataTypes.DOUBLE,
     isWishlist: DataTypes.BOOLEAN,
-    quantity: DataTypes.INTEGER,
+    isCart: DataTypes.BOOLEAN,
   });
 };
 
